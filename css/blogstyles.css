@@ -1,0 +1,128 @@
+:root {
+    --body-colour: #3E2F5D;
+    --headings-color:#3E2F5D;
+    --text-color: #3E2F5D;
+    --alt-text: #ffffff;
+    --links: #E7E1E1;
+    --alternate-links: #951b58;
+}
+
+*, ::before, ::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    /*overflow: hidden;*/
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background: var(--alt-text);
+    color: var(--text-color)
+
+}
+
+.container {
+    /*display: flex;*/
+    width: 100%;
+}
+
+
+
+/* ----------------- Top Bar-------------------------------*/
+.top-bar {
+    width: 100%;
+    height: 12dvh;
+    display: flex;
+    gap: 2%;
+    /*position:fixed;*/
+}
+
+.logo-div {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    padding: 3em 0 3em 7em;
+    gap: 1.4em;
+    /*position: fixed;*/
+}
+
+.logo{
+    width: 70px;
+    border-radius: 100%;
+    border: 1px solid var(--body-colour);
+}
+
+.name {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.page-title-div h1{
+    font-size: 4rem;
+    font-weight: bolder;
+    padding-top: 1em;
+    padding-left: 0.5em;
+}
+
+
+
+/* ----------------- Main body-----------------------*/
+
+.main-display-grid {
+    display: grid;
+    gap: 3%;
+    grid-template-columns: 20% 77%;
+}
+
+
+/* ----------------- Side Navigation-----------------------*/
+.navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    padding: 5em;
+}
+
+.nav-list {
+    width: 15rem;
+    background-color: var(--alt-text);
+    padding: 1em;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.nav-items {
+    color: var(--text-color);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.side-nav {
+    display: block;
+    background-color: var(--body-colour);
+    height: 88dvh;
+    border-top-right-radius: 6em;
+    padding-left: 3.8em;
+    padding-top: 3em;
+    /*position: fixed;*/
+}
+
+/* ----------------- Main Content-----------------------*/
+.main-contents {
+    max-width: 75%;
+    padding-top: 4em;
+}
+
+.main-contents p {
+    font-size: 2rem;
+    font-family: sans-serif;
+    line-height: 1.3;
+    margin-bottom: 0.8ch;
+}

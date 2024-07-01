@@ -1,0 +1,222 @@
+:root {
+    --body-colour: #3E2F5D;
+    --headings-color:#3E2F5D;
+    --text-color: #3E2F5D;
+    --alt-text: #ffffff;
+    --links: #E7E1E1;
+    --alternate-links: #951b58;
+}
+
+*, ::before, ::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background: var(--alt-text);
+    color: var(--text-color)
+
+}
+
+.container {
+    /*display: flex;*/
+    width: 100%;
+}
+
+
+
+/* ----------------- Top Bar-------------------------------*/
+.top-bar {
+    width: 98%;
+    height: 12dvh;
+    display: flex;
+    gap: 2%;
+    align-items: center;
+    jus
+    /*position:fixed;*/
+}
+
+.logo-div {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    padding: 3em 0 3em 7em;
+    gap: 1.4em;
+    /*position: fixed;*/
+}
+
+.logo{
+    width: 70px;
+    border-radius: 100%;
+    border: 1px solid var(--body-colour);
+}
+
+.name {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.page-title-div h1{
+    font-size: 4rem;
+    font-weight: bolder;
+    /*padding-top: 1em;*/
+    padding-left: 0.5em;
+}
+
+/* ----------------- Side Navigation-----------------------*/
+.navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 5em;
+}
+
+.nav-list {
+    width: 12rem;
+    background-color: var(--alt-text);
+    padding: 1em;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.nav-items {
+    color: var(--body-colour);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.side-nav {
+    margin-top: 4em;
+    /*position: fixed;*/
+}
+
+/* ----------------- Main body-----------------------*/
+
+.main-display-grid {
+    display: grid;
+    grid-template-columns: 20% 60% 16%;
+    gap: 2%;
+}
+
+/* ----------------- Main Content-----------------------*/
+.main-contents {
+    background-color: var(--body-colour);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 88dvh;
+    border-top-right-radius: 6em;
+    color: var(--alt-text);
+    /*display: grid;
+    gap: 1%;
+    grid-template-columns: 27.5% 71%;*/
+}
+
+
+/* ----------------- Home Design-----------------------*/
+.homedesign-div {
+    margin-top: 3em;
+    margin-bottom: 1em;
+    clear: both;
+    height: 70%;
+}
+
+.levels {
+    padding: 1em;
+}
+
+.design-text {
+    font-size: 2.7rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding-left: 2ch;
+    z-index: 1000;
+}
+
+.shs, .jhs, .primary, .pre-school {
+    opacity: 50%;
+}
+
+.underline {
+    width: 15ch;
+    height: 0.3ch;
+    background-color: var(--links);
+    margin-left: 3ch;
+}
+
+.pockets {
+    height: 15ch;
+    width: 40ch;
+    border: 1px solid var(--links);
+    border-top-right-radius: 50px;
+    border-left: none;
+    opacity: 40%;
+}
+
+.pocket1 {
+    position: absolute;
+    z-index: 1;
+    border-bottom: none;
+}
+
+.pocket2 {
+    position: absolute;
+    z-index: 2;
+    border-bottom: none;
+}
+
+.pocket3 {
+    position: absolute;
+    z-index: 3;
+    border-bottom: none;
+}
+
+.pocket4 {
+    position: absolute;
+    z-index: 4;
+    border-bottom: none;
+}
+
+.pocket5 {
+    position: absolute;
+    z-index: 5;
+}
+
+.levels a {
+    text-decoration: none;
+    color: var(--links);
+}
+
+
+
+/*--------------------LLM Narative----------------------*/
+.reading-grid {
+    padding: 1em;
+    border-right: 1px solid var(--links);
+}
+
+.reading-grid p {
+    font-size: 2.1rem;
+}
+
+/*--------------------LLM Topics----------------------*/
+
+.topics {
+    padding: 0.5em;
+}
+
+.topics li {
+    line-height: 1.25;
+    list-style: none;
+    font-size: 1.6rem;
+}
