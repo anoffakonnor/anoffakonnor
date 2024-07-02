@@ -19,8 +19,8 @@ html {
 
 body {
     margin: 0;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 200vh; /*it was just 100vh*/
+    /*overflow: hidden;*/
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     background: var(--alt-text);
     color: var(--text-color)
@@ -36,16 +36,23 @@ body {
 
 /* ----------------- Top Bar-------------------------------*/
 .top-bar {
-    width: 98%;
+    width: 100%;/*It was 98%*/
     height: 12dvh;
     display: flex;
     gap: 2%;
     align-items: center;
-    jus
     /*position:fixed;*/
+    background-color: var(--alt-text);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.6s;
+    /*padding: 12dvh 0;*/
 }
 
 .logo-div {
+    position: relative; /*You can later take it out*/
     width: 20%;
     display: flex;
     align-items: center;
@@ -104,8 +111,13 @@ body {
 
 .main-display-grid {
     display: grid;
-    grid-template-columns: 20% 60% 16%;
-    gap: 2%;
+    /*grid-template-columns: 20% 60% 16%;*/
+    grid-template-columns: 78% 18%;
+    gap: 4%;
+    margin-top: 12dvh; /*This was important*/
+
+    /*position: relative;*/
+    min-height: 200vh;
 }
 
 /* ----------------- Main Content-----------------------*/
@@ -117,9 +129,16 @@ body {
     height: 88dvh;
     border-top-right-radius: 6em;
     color: var(--alt-text);
+    width: 20%;
     /*display: grid;
     gap: 1%;
     grid-template-columns: 27.5% 71%;*/
+
+    position: fixed;
+    /*top: 120;
+    left: 0;
+    transition: 0.6s;*/
+    
 }
 
 
@@ -201,22 +220,36 @@ body {
 
 /*--------------------LLM Narative----------------------*/
 .reading-grid {
-    padding: 1em;
+    padding: 1em 4em 1em 1em;
     border-right: 1px solid var(--links);
+    width: 72.5%;
+    /*margin-left: 20vw;*/
+
+    margin-left: 27%;
+    transition: 0.6s;
 }
 
 .reading-grid p {
     font-size: 2.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.1ch;
 }
 
 /*--------------------LLM Topics----------------------*/
 
 .topics {
     padding: 0.5em;
+    position: fixed;
+    right: 0;
+}
+
+.topics-heading {
+    color: var(--headings-color);
+    margin-bottom: 2ch;
 }
 
 .topics li {
-    line-height: 1.25;
-    list-style: none;
+    line-height: 2;
+    /*list-style: none;*/
     font-size: 1.6rem;
 }

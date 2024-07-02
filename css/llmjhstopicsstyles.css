@@ -39,7 +39,7 @@ body {
     width: 100%;/*It was 98%*/
     height: 12dvh;
     display: flex;
-    gap: 2%;
+    gap: 4.2%;
     align-items: center;
     /*position:fixed;*/
     background-color: var(--alt-text);
@@ -73,11 +73,27 @@ body {
     font-weight: bold;
 }
 
+.page-title-div {
+    width: 57%;
+}
+
+.level-name {
+    width: 30%;
+}
+
 .page-title-div h1{
-    font-size: 4rem;
+    font-size: 3.8rem;
+    font-weight: bolder;
+    /*padding-top: 1em;*/
+    /*padding-left: 3em;*/
+}
+
+.level-name h2{  
+    font-size: 3rem;
     font-weight: bolder;
     /*padding-top: 1em;*/
     padding-left: 0.5em;
+    color: darkorange;
 }
 
 /* ----------------- Side Navigation-----------------------*/
