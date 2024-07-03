@@ -248,7 +248,7 @@ body {
 .reading-grid p {
     font-size: 2.1rem;
     line-height: 1.6;
-    margin-bottom: 1.1ch;
+    padding: 1ch;
 }
 
 /*--------------------LLM Topics----------------------*/
@@ -268,4 +268,45 @@ body {
     line-height: 2;
     /*list-style: none;*/
     font-size: 1.6rem;
+}
+
+.classes {
+    margin-bottom: 10ch;
+}
+
+.classes h2 {
+    background-color: darkorange;
+    color: var(--headings-color);
+    padding: 1em;
+    font-size: 2.1rem;
+}
+
+.topic-summary {
+    width: 98%;
+    padding: 1em;
+    /*display: flex;*/
+}
+
+.lesson {
+    border-bottom: 2px solid var(--body-colour);
+    margin-bottom: 4em;
+}
+
+
+/*-----Pictures-----*/
+.width200 {
+    width: 200px;
+    float: inline-end;
+}
+
+.half-width {
+    width: 500px;
+    /*float: inline-end;*/
+    display: block;
+    margin: 1em auto;
+}
+
+.place {
+    width: 200px;
+    float: inline-end;
 }
