@@ -36,12 +36,22 @@ body {
 
 /* ----------------- Top Bar-------------------------------*/
 .top-bar {
-    width: 100%;
-    height: 12dvh;
-    display: flex;
-    gap: 2%;
-    /*position:fixed;*/
+   width: 100%;/*It was 98%*/
+height: 12dvh;
+display: flex;
+gap: 2%;
+align-items: center;
+/*position:fixed;*/
+background-color: var(--alt-text);
+
+position: fixed;
+top: 0;
+left: 0;
+transition: 0.6s;
+/*padding: 12dvh 0;*/ 
 }
+
+
 
 .logo-div {
     width: 20%;
@@ -76,10 +86,17 @@ body {
 /* ----------------- Main body-----------------------*/
 
 .main-display-grid {
-    display: grid;
-    gap: 3%;
-    grid-template-columns: 20% 77%;
+    display: grid; /*grid-template-columns: 20% 60% 16%;*/
+    gap: 4%;
+    grid-template-columns: 78% 18%;
+    margin-top: 12dvh; /*This was important*/
+    /*position: relative;*/
+    min-height: 200vh;
 }
+    
+    
+
+    
 
 
 /* ----------------- Side Navigation-----------------------*/
@@ -111,13 +128,18 @@ body {
     border-top-right-radius: 6em;
     padding-left: 3.8em;
     padding-top: 3em;
-    /*position: fixed;*/
+    position: fixed;
 }
 
 /* ----------------- Main Content-----------------------*/
 .main-contents {
-    max-width: 75%;
-    padding-top: 4em;
+    padding: 1em 4em 1em 1em;
+    border-right: 1px solid var(--links);
+    width: 72.5%;
+    /*margin-left: 20vw;*/
+
+    margin-left: 27%;
+    transition: 0.6s;
 }
 
 .main-contents p {
@@ -125,4 +147,650 @@ body {
     font-family: sans-serif;
     line-height: 1.3;
     margin-bottom: 0.8ch;
+}
+
+.project-link {
+    font-size: 1.8rem;
+
+}
+
+
+/*------Media Query----------*/
+
+@media(max-width:1024px){
+
+    body {
+        margin: 0;
+        height: 100vh;
+        /*overflow: hidden;*/
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        background: var(--alt-text);
+        color: var(--text-color)
+
+    }
+
+    .container {
+        /*display: flex;*/
+        width: 100%;
+    }
+
+    /* ----------------- Top Bar-------------------------------*/
+    .top-bar {
+    width: 100%;/*It was 98%*/
+    height: 12dvh;
+    display: flex;
+    gap: 10%;  /*It was 2%*/
+    align-items: center;
+    /*position:fixed;*/
+    background-color: var(--alt-text);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.6s;
+    /*padding: 12dvh 0;*/ 
+    }
+
+    .logo-div {
+        width: 18%;
+        display: flex;
+        align-items: center;
+        padding: 3em 0 3em 7em;
+        gap: 1.4em;
+        /*position: fixed;*/
+    }
+
+    .logo{
+        width: 60px;
+        border-radius: 100%;
+        border: 1px solid var(--body-colour);
+    }
+
+    .name {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .page-title-div h1{
+        font-size: 3.5rem;
+        font-weight: bolder;
+        padding-top: 0.7em;
+        padding-left: 0.5em;
+    }
+
+
+    /* ----------------- Main body-----------------------*/
+
+    .main-display-grid {
+        display: grid; /*grid-template-columns: 20% 60% 16%;*/
+        gap: 2%;
+        grid-template-columns: 83% 15%;
+        margin-top: 12dvh; /*This was important*/
+        /*position: relative;*/
+        min-height: 200vh;
+    }
+
+
+    /* ----------------- Side Navigation-----------------------*/
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+        padding: 3em;
+    }
+
+    .nav-list {
+        width: 13rem;
+        background-color: var(--alt-text);
+        padding: 0.8em;
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    .nav-items {
+        color: var(--text-color);
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .side-nav {
+        display: block;
+        background-color: var(--body-colour);
+        height: 88dvh;
+        border-top-right-radius: 6em;
+        padding-left: 2.5em;
+        padding-top: 3em;
+        position: fixed;
+    }
+
+    /* ----------------- Main Content-----------------------*/
+    .main-contents {
+        padding: 1em 2em 1em 1em;
+        border-right: 1px solid var(--links);
+        width: 69.5%;
+        /*margin-left: 20vw;*/
+
+        margin-left: 27%;
+        transition: 0.6s;
+    }
+
+    .main-contents p {
+        font-size: 1.8rem;
+        font-family: sans-serif;
+        line-height: 1.3;
+        margin-bottom: 0.8ch;
+    }
+
+    .project-link {
+        font-size: 1.8rem;
+
+        }
+
+}
+
+
+
+@media(max-width:769px){
+
+    body {
+        margin: 0;
+        height: 100vh;
+        /*overflow: hidden;*/
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        background: var(--alt-text);
+        color: var(--text-color)
+
+    }
+
+    .container {
+        /*display: flex;*/
+        width: 100%;
+    }
+
+    /* ----------------- Top Bar-------------------------------*/
+    .top-bar {
+    width: 100%;/*It was 98%*/
+    height: 12dvh;
+    display: flex;
+    gap: 10%;  /*It was 2%*/
+    align-items: center;
+    /*position:fixed;*/
+    background-color: var(--alt-text);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.6s;
+    /*padding: 12dvh 0;*/ 
+    }
+
+    .logo-div {
+        width: 18%;
+        display: flex;
+        align-items: center;
+        padding: 3em 0 3em 3em;
+        gap: 1.4em;
+        /*position: fixed;*/
+    }
+
+    .logo{
+        width: 50px;
+        border-radius: 100%;
+        border: 1px solid var(--body-colour);
+    }
+
+    .name {
+        display: block;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .page-title-div h1{
+        font-size: 3rem;
+        font-weight: bolder;
+        padding-top: 0.7em;
+        padding-left: 0.5em;
+    }
+
+
+    /* ----------------- Main body-----------------------*/
+
+    .main-display-grid {
+        display: grid; /*grid-template-columns: 20% 60% 16%;*/
+        gap: 1%;
+        grid-template-columns: 85% 14%;
+        margin-top: 12dvh; /*This was important*/
+        /*position: relative;*/
+        min-height: 200vh;
+    }
+
+
+    /* ----------------- Side Navigation-----------------------*/
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+        padding: 1em;
+    }
+
+    .nav-list {
+        width: 11rem;
+        background-color: var(--alt-text);
+        padding: 0.7em;
+        border-radius: 12px;
+        text-align: center;
+    }
+
+    .nav-items {
+        color: var(--text-color);
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+
+    .side-nav {
+        display: block;
+        background-color: var(--body-colour);
+        height: 88dvh;
+        border-top-right-radius: 6em;
+        padding-left: 2.5em;
+        padding-top: 5em;
+        position: fixed;
+    }
+
+    /* ----------------- Main Content-----------------------*/
+    .main-contents {
+        padding: 1em 2em 1em 0.8em;
+        border-right: 1px solid var(--links);
+        width: 69.5%;
+        /*margin-left: 20vw;*/
+
+        margin-left: 25%;
+        transition: 0.6s;
+    }
+
+    .main-contents p {
+        font-size: 1.6rem;
+        font-family: sans-serif;
+        line-height: 1.3;
+        margin-bottom: 0.8ch;
+    }
+
+    .project-link {
+        font-size: 1.8rem;
+
+        }
+
+}
+
+
+
+
+@media(max-width:426px){
+
+    body {
+        margin: 0;
+        height: 100vh;
+        /*overflow: hidden;*/
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        background: var(--alt-text);
+        color: var(--text-color)
+
+    }
+
+    .container {
+        /*display: flex;*/
+        width: 100%;
+    }
+
+    /* ----------------- Top Bar-------------------------------*/
+    .top-bar {
+    width: 100%;/*It was 98%*/
+    height: 12dvh;
+    display: flex;
+    gap: 10%;  /*It was 2%*/
+    align-items: center;
+    /*position:fixed;*/
+    background-color: var(--alt-text);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.6s;
+    /*padding: 12dvh 0;*/ 
+    }
+
+    .logo-div {
+        width: 20%;
+        display: flex;
+        align-items: center;
+        padding: 3em 0 3em 1em;
+        gap: 1.2em;
+        /*position: fixed;*/
+    }
+
+    .logo{
+        width: 50px;
+        border-radius: 100%;
+        border: 1px solid var(--body-colour);
+    }
+
+    .name {
+        display: block;
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+
+    .page-title-div h1{
+        font-size: 3rem;
+        font-weight: bolder;
+        padding-top: 0.5em;
+        padding-left: 0.5em;
+    }
+
+
+    /* ----------------- Main body-----------------------*/
+
+    .main-display-grid {
+        display: grid; /*grid-template-columns: 20% 60% 16%;*/
+        gap: 1%;
+        grid-template-columns: 98% 1%;
+        margin-top: 12dvh; /*This was important*/
+        /*position: relative;*/
+        min-height: 200vh;
+    }
+
+
+    /* ----------------- Side Navigation-----------------------*/
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+        padding: 0.5em;
+    }
+
+    .nav-list {
+        width: 8rem;
+        background-color: var(--alt-text);
+        padding: 0.7em;
+        border-radius: 12px;
+        text-align: center;
+    }
+
+    .nav-items {
+        color: var(--text-color);
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+
+    .side-nav {
+        display: block;
+        background-color: var(--body-colour);
+        height: 88dvh;
+        border-top-right-radius: 6em;
+        padding-left: 1em;
+        padding-top: 5em;
+        position: fixed;
+    }
+
+    /* ----------------- Main Content-----------------------*/
+    .main-contents {
+        padding: 1em 2em 1em 0.8em;
+        border-right: 1px solid var(--links);
+        width: 75%;
+        /*margin-left: 20vw;*/
+
+        margin-left: 25%;
+        transition: 0.6s;
+    }
+
+    .main-contents p {
+        font-size: 1.6rem;
+        font-family: sans-serif;
+        line-height: 1.3;
+        margin-bottom: 0.8ch;
+    }
+
+    .project-link {
+        font-size: 1.8rem;
+
+        }
+
+}
+
+
+
+@media(max-width:376px){
+
+    /* ----------------- Top Bar-------------------------------*/
+    .top-bar {
+    width: 100%;/*It was 98%*/
+    height: 12dvh;
+    display: flex;
+    gap: 10%;  /*It was 2%*/
+    align-items: center;
+    /*position:fixed;*/
+    background-color: var(--alt-text);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.6s;
+    /*padding: 12dvh 0;*/ 
+    }
+
+    .logo-div {
+        width: 20%;
+        display: flex;
+        align-items: center;
+        padding: 3em 0 3em 1em;
+        gap: 1em;
+        /*position: fixed;*/
+    }
+
+    .logo{
+        width: 50px;
+        border-radius: 100%;
+        border: 1px solid var(--body-colour);
+    }
+
+    .name {
+        display: block;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .page-title-div h1{
+        font-size: 2.6rem;
+        font-weight: bolder;
+        padding-top: 0.5em;
+        padding-left: 0.5em;
+    }
+
+
+    /* ----------------- Main body-----------------------*/
+
+    .main-display-grid {
+        display: grid; /*grid-template-columns: 20% 60% 16%;*/
+        gap: 1%;
+        grid-template-columns: 98% 1%;
+        margin-top: 12dvh; /*This was important*/
+        /*position: relative;*/
+        min-height: 200vh;
+    }
+
+
+    /* ----------------- Side Navigation-----------------------*/
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        padding: 0.4em;
+    }
+
+    .nav-list {
+        width: 5rem;
+        background-color: var(--alt-text);
+        border-radius: 12px;
+        text-align: center;
+    }
+
+    .nav-items {
+        color: var(--text-color);
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+
+    .side-nav {
+        display: block;
+        background-color: var(--body-colour);
+        height: 88dvh;
+        border-top-right-radius: 6em;
+        padding-left: 0.6em;
+        padding-top: 5em;
+        position: fixed;
+    }
+
+    /* ----------------- Main Content-----------------------*/
+    .main-contents {
+        padding: 1em 2em 1em 0.8em;
+        border-right: 1px solid var(--links);
+        width: 82%;
+        /*margin-left: 20vw;*/
+
+        margin-left: 18%;
+        transition: 0.6s;
+    }
+
+    .main-contents p {
+        font-size: 1.3rem;
+        font-family: sans-serif;
+        line-height: 1.3;
+        margin-bottom: 0.8ch;
+    }
+
+    .project-link {
+        font-size: 1.8rem;
+
+        }
+
+}
+
+
+
+
+@media(max-width:320px){
+
+    /* ----------------- Top Bar-------------------------------*/
+    .top-bar {
+    width: 100%;/*It was 98%*/
+    height: 12dvh;
+    display: flex;
+    gap: 10%;  /*It was 2%*/
+    align-items: center;
+    /*position:fixed;*/
+    background-color: var(--alt-text);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.6s;
+    /*padding: 12dvh 0;*/ 
+    }
+
+    .logo-div {
+        width: 20%;
+        display: flex;
+        align-items: center;
+        padding: 3em 0 3em 1em;
+        gap: 1em;
+        /*position: fixed;*/
+    }
+
+    .logo{
+        width: 40px;
+        border-radius: 100%;
+        border: 1px solid var(--body-colour);
+    }
+
+    .name {
+        display: block;
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+
+    .page-title-div h1{
+        font-size: 2.6rem;
+        font-weight: bolder;
+        padding-top: 0.5em;
+        padding-left: 0.5em;
+    }
+
+
+    /* ----------------- Main body-----------------------*/
+
+    .main-display-grid {
+        display: grid; /*grid-template-columns: 20% 60% 16%;*/
+        gap: 1%;
+        grid-template-columns: 98% 1%;
+        margin-top: 12dvh; /*This was important*/
+        /*position: relative;*/
+        min-height: 200vh;
+    }
+
+
+    /* ----------------- Side Navigation-----------------------*/
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        padding: 0.4em;
+    }
+
+    .nav-list {
+        width: 5rem;
+        background-color: var(--alt-text);
+        border-radius: 12px;
+        text-align: center;
+    }
+
+    .nav-items {
+        color: var(--text-color);
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+
+    .side-nav {
+        display: block;
+        background-color: var(--body-colour);
+        height: 88dvh;
+        border-top-right-radius: 6em;
+        padding-left: 0.6em;
+        padding-top: 5em;
+        position: fixed;
+    }
+
+    /* ----------------- Main Content-----------------------*/
+    .main-contents {
+        padding: 1em 2em 1em 0.8em;
+        border-right: 1px solid var(--links);
+        width: 81%;
+        /*margin-left: 20vw;*/
+
+        margin-left: 19%;
+        transition: 0.6s;
+    }
+
+    .main-contents p {
+        font-size: 1.3rem;
+        font-family: sans-serif;
+        line-height: 1.3;
+        margin-bottom: 0.8ch;
+    }
+
+    .project-link {
+        font-size: 1.8rem;
+
+        }
+
 }

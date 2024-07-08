@@ -32,6 +32,14 @@ body {
     width: 100%;
 }
 
+h3 {
+    font-weight: bold;
+    font-size: 2rem;
+    color: brown;
+    text-decoration: underline;
+    padding-top: 3em;
+}
+
 
 
 /* ----------------- Top Bar-------------------------------*/
@@ -290,6 +298,11 @@ body {
 .lesson {
     border-bottom: 2px solid var(--body-colour);
     margin-bottom: 4em;
+    padding-bottom: 4em;
+}
+
+.sub-topic {
+    margin-top: 2em;
 }
 
 
@@ -309,4 +322,922 @@ body {
 .place {
     width: 200px;
     float: inline-end;
+}
+
+
+/*------Media Query----------*/
+
+@media(max-width:1024px){
+
+    body {
+        margin: 0;
+        min-height: 200vh; /*it was just 100vh*/
+        /*overflow: hidden;*/
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        background: var(--alt-text);
+        color: var(--text-color)
+    
+    }
+    
+    .container {
+        /*display: flex;*/
+        width: 100%;
+    }
+    
+    
+    
+    /* ----------------- Top Bar-------------------------------*/
+    .top-bar {
+        width: 100%;/*It was 98%*/
+        height: 12dvh;
+        display: flex;
+        gap: 2%;
+        align-items: center;
+        /*position:fixed;*/
+        background-color: var(--alt-text);
+    
+        position: fixed;
+        top: 0;
+        left: 0;
+        transition: 0.6s;
+        /*padding: 12dvh 0;*/
+    }
+    
+    .logo-div {
+        position: relative; /*You can later take it out*/
+        width: 20%;
+        display: flex;
+        align-items: center;
+        padding: 3em 0 3em 3em;
+        gap: 1.4em;
+        /*position: fixed;*/
+    }
+    
+    .logo{
+        width: 50px;
+        border-radius: 100%;
+        border: 1px solid var(--body-colour);
+    }
+    
+    .name {
+        display: block;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    
+    .page-title-div h1{
+        font-size: 4rem;
+        font-weight: bolder;
+        /*padding-top: 1em;*/
+        padding-left: 0.5em;
+    }
+
+    .level-name h2{  
+        font-size: 3rem;
+        font-weight: bolder;
+        /*padding-top: 1em;*/
+        padding-left: 0.5em;
+        color: darkorange;
+    }
+    
+    /* ----------------- Side Navigation-----------------------*/
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        padding: 5em;
+    }
+    
+    .nav-list {
+        width: 12rem;
+        background-color: var(--alt-text);
+        padding: 1em;
+        border-radius: 15px;
+        text-align: center;
+    }
+    
+    .nav-items {
+        color: var(--body-colour);
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    
+    .side-nav {
+        margin-top: 4em;
+        /*position: fixed;*/
+    }
+    
+    /* ----------------- Main body-----------------------*/
+    
+    .main-display-grid {
+        display: grid;
+        /*grid-template-columns: 20% 60% 16%;*/
+        grid-template-columns: 78% 18%;
+        gap: 4%;
+        margin-top: 12dvh; /*This was important*/
+    
+        /*position: relative;*/
+        min-height: 200vh;
+    }
+    
+    /* ----------------- Main Content-----------------------*/
+    .main-contents {
+        background-color: var(--body-colour);
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        height: 88dvh;
+        border-top-right-radius: 6em;
+        color: var(--alt-text);
+        width: 20%;
+        /*display: grid;
+        gap: 1%;
+        grid-template-columns: 27.5% 71%;*/
+    
+        position: fixed;
+        /*top: 120;
+        left: 0;
+        transition: 0.6s;*/
+        
+    }
+    
+    
+    /* ----------------- Home Design-----------------------*/
+    .homedesign-div {
+        margin-top: 3em;
+        margin-bottom: 1em;
+        clear: both;
+        height: 70%;
+    }
+    
+    .levels {
+        padding: 0.8em;
+    }
+    
+    .design-text {
+        font-size: 2rem;
+        font-weight: bold;
+        font-family: sans-serif;
+        padding-left: 1.4ch;
+        z-index: 1000;
+    }
+    
+    .shs, .jhs, .primary, .pre-school {
+        opacity: 50%;
+    }
+    
+    .underline {
+        width: 15ch;
+        height: 0.3ch;
+        background-color: var(--links);
+        margin-left: 2ch;
+    }
+    
+    .pockets {
+        height: 14ch;
+        width: 30ch;
+        border: 1px solid var(--links);
+        border-top-right-radius: 50px;
+        border-left: none;
+        opacity: 40%;
+    }
+    
+    .pocket1 {
+        position: absolute;
+        z-index: 1;
+        border-bottom: none;
+    }
+    
+    .pocket2 {
+        position: absolute;
+        z-index: 2;
+        border-bottom: none;
+    }
+    
+    .pocket3 {
+        position: absolute;
+        z-index: 3;
+        border-bottom: none;
+    }
+    
+    .pocket4 {
+        position: absolute;
+        z-index: 4;
+        border-bottom: none;
+    }
+    
+    .pocket5 {
+        position: absolute;
+        z-index: 5;
+    }
+    
+    .levels a {
+        text-decoration: none;
+        color: var(--links);
+    }
+    
+    
+    
+    /*--------------------LLM Narative----------------------*/
+    .reading-grid {
+        padding: 1em 2em 1em 1em;
+        border-right: 1px solid var(--links);
+        width: 72.5%;
+        /*margin-left: 20vw;*/
+    
+        margin-left: 27%;
+        transition: 0.6s;
+    }
+    
+    .reading-grid p {
+        font-size: 1.7rem;
+        line-height: 1.6;
+        margin-bottom: 1.1ch;
+    }
+    
+    /*--------------------LLM Topics----------------------*/
+    
+    .topics {
+        padding: 0.5em;
+        /*position: fixed;*/
+        right: 0;
+    }
+    
+    .topics-heading {
+        color: var(--headings-color);
+        margin-bottom: 2ch;
+    }
+    
+    .topics li {
+        line-height: 2.3;
+        /*list-style: none;*/
+        font-size: 1.1rem;
+    }
+
+    .classes {
+        margin-bottom: 8ch;
+    }
+    
+    .classes h2 {
+        background-color: darkorange;
+        color: var(--headings-color);
+        padding: 0.5em;
+        font-size: 1.6rem;
+    }
+
+    /*--------------------LLM Narative----------------------*/
+.reading-grid {
+    padding: 1em 4em 1em 1em;
+    border-right: 1px solid var(--links);
+    width: 72.5%;
+    /*margin-left: 20vw;*/
+
+    margin-left: 27%;
+    transition: 0.6s;
+}
+
+.classes {
+    margin-bottom: 10ch;
+}
+
+.classes h2 {
+    background-color: darkorange;
+    color: var(--headings-color);
+    padding: 1em;
+    font-size: 2.1rem;
+}
+
+.topic-summary {
+    width: 98%;
+    padding: 1em;
+    /*display: flex;*/
+}
+
+.lesson {
+    border-bottom: 2px solid var(--body-colour);
+    margin-bottom: 4em;
+    padding-bottom: 4em;
+}
+
+.sub-topic {
+    margin-top: 2em;
+}
+
+
+/*-----Pictures-----*/
+.width200 {
+    width: 200px;
+    float: inline-end;
+}
+
+.half-width {
+    width: 500px;
+    /*float: inline-end;*/
+    display: block;
+    margin: 1em auto;
+}
+
+.place {
+    width: 200px;
+    float: inline-end;
+}
+
+
+}
+
+
+
+@media(max-width:769px){
+
+    body {
+        margin: 0;
+        min-height: 200vh; /*it was just 100vh*/
+        /*overflow: hidden;*/
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        background: var(--alt-text);
+        color: var(--text-color)
+    
+    }
+    
+    .container {
+        /*display: flex;*/
+        width: 100%;
+    }
+    
+    
+    
+    /* ----------------- Top Bar-------------------------------*/
+    .top-bar {
+        width: 100%;/*It was 98%*/
+        height: 12dvh;
+        display: flex;
+        gap: 2%;
+        align-items: center;
+        /*position:fixed;*/
+        background-color: var(--alt-text);
+    
+        position: fixed;
+        top: 0;
+        left: 0;
+        transition: 0.6s;
+        /*padding: 12dvh 0;*/
+    }
+    
+    .logo-div {
+        position: relative; /*You can later take it out*/
+        width: 20%;
+        display: flex;
+        align-items: center;
+        padding: 3em 0 3em 1em;
+        gap: 1em;
+        /*position: fixed;*/
+    }
+    
+    .logo{
+        width: 40px;
+        border-radius: 100%;
+        border: 1px solid var(--body-colour);
+    }
+    
+    .name {
+        display: block;
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+    
+    .page-title-div h1{
+        font-size: 3.5rem;
+        font-weight: bolder;
+        /*padding-top: 1em;*/
+        padding-left: 0.5em;
+    }
+
+    .level-name h2{  
+        font-size: 3rem;
+        font-weight: bolder;
+        /*padding-top: 1em;*/
+        padding-left: 0.5em;
+        color: darkorange;
+    }
+    
+    /* ----------------- Side Navigation-----------------------*/
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        padding: 3em;
+    }
+    
+    .nav-list {
+        width: 10rem;
+        background-color: var(--alt-text);
+        padding: 1em;
+        border-radius: 15px;
+        text-align: center;
+    }
+    
+    .nav-items {
+        color: var(--body-colour);
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    
+    .side-nav {
+        margin-top: 4em;
+        /*position: fixed;*/
+    }
+    
+    /* ----------------- Main body-----------------------*/
+    
+    .main-display-grid {
+        display: grid;
+        /*grid-template-columns: 20% 60% 16%;*/
+        grid-template-columns: 78% 18%;
+        gap: 4%;
+        margin-top: 12dvh; /*This was important*/
+    
+        /*position: relative;*/
+        min-height: 200vh;
+    }
+    
+    /* ----------------- Main Content-----------------------*/
+    .main-contents {
+        background-color: var(--body-colour);
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        height: 88dvh;
+        border-top-right-radius: 6em;
+        color: var(--alt-text);
+        width: 20%;
+        /*display: grid;
+        gap: 1%;
+        grid-template-columns: 27.5% 71%;*/
+    
+        position: fixed;
+        /*top: 120;
+        left: 0;
+        transition: 0.6s;*/
+        
+    }
+    
+    
+    /* ----------------- Home Design-----------------------*/
+    .homedesign-div {
+        margin-top: 2em;
+        margin-bottom: 1em;
+        clear: both;
+        height: 70%;
+    }
+    
+    .levels {
+        padding: 0.6em;
+    }
+    
+    .design-text {
+        font-size: 1.6rem;
+        font-weight: bold;
+        font-family: sans-serif;
+        padding-left: 1.1ch;
+        z-index: 1000;
+    }
+    
+    .shs, .jhs, .primary, .pre-school {
+        opacity: 50%;
+    }
+    
+    .underline {
+        width: 12ch;
+        height: 0.3ch;
+        background-color: var(--links);
+        margin-left: 2ch;
+    }
+    
+    .pockets {
+        height: 14ch;
+        width: 23ch;
+        border: 1px solid var(--links);
+        border-top-right-radius: 50px;
+        border-left: none;
+        opacity: 40%;
+    }
+    
+    .pocket1 {
+        position: absolute;
+        z-index: 1;
+        border-bottom: none;
+    }
+    
+    .pocket2 {
+        position: absolute;
+        z-index: 2;
+        border-bottom: none;
+    }
+    
+    .pocket3 {
+        position: absolute;
+        z-index: 3;
+        border-bottom: none;
+    }
+    
+    .pocket4 {
+        position: absolute;
+        z-index: 4;
+        border-bottom: none;
+    }
+    
+    .pocket5 {
+        position: absolute;
+        z-index: 5;
+    }
+    
+    .levels a {
+        text-decoration: none;
+        color: var(--links);
+    }
+    
+    
+    
+    /*--------------------LLM Narative----------------------*/
+    .reading-grid {
+        padding: 1em 1em 1em 1em;
+        border-right: 1px solid var(--links);
+        width: 72.5%;
+        /*margin-left: 20vw;*/
+    
+        margin-left: 26%;
+        transition: 0.6s;
+    }
+    
+    .reading-grid p {
+        font-size: 1.4rem;
+        line-height: 1.6;
+        margin-bottom: 1.1ch;
+    }
+    
+    /*--------------------LLM Topics----------------------*/
+    
+    .topics {
+        padding: 0.1em;
+        /*position: fixed;*/
+        /*right: 0;*/
+    }
+    
+    .topics-heading {
+        color: var(--headings-color);
+        margin-bottom: 2ch;
+    }
+    
+    .topics li {
+        line-height: 2.7;
+        /*list-style: none;*/
+        font-size: 0.85rem;
+    }
+
+    /*--------------------LLM Narative----------------------*/
+
+.classes {
+    margin-bottom: 10ch;
+}
+
+.classes h2 {
+    background-color: darkorange;
+    color: var(--headings-color);
+    padding: 1em;
+    font-size: 2.1rem;
+}
+
+.topic-summary {
+    width: 98%;
+    padding: 1em;
+    /*display: flex;*/
+}
+
+.lesson {
+    border-bottom: 2px solid var(--body-colour);
+    margin-bottom: 4em;
+    padding-bottom: 4em;
+}
+
+.sub-topic {
+    margin-top: 2em;
+}
+
+
+/*-----Pictures-----*/
+.width200 {
+    width: 200px;
+    float: inline-end;
+}
+
+.half-width {
+    width: 400px;
+    /*float: inline-end;*/
+    display: block;
+    margin: 1em auto;
+}
+
+.place {
+    width: 200px;
+    float: inline-end;
+}
+
+
+}
+
+
+
+@media(max-width:426px){
+
+    body {
+        margin: 0;
+        min-height: 200vh; /*it was just 100vh*/
+        /*overflow: hidden;*/
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        background: var(--alt-text);
+        color: var(--text-color)
+    
+    }
+    
+    .container {
+        /*display: flex;*/
+        width: 100%;
+    }
+    
+    
+    
+    /* ----------------- Top Bar-------------------------------*/
+    .top-bar {
+        width: 100%;/*It was 98%*/
+        height: 12dvh;
+        display: flex;
+        gap: 2%;
+        align-items: center;
+        /*position:fixed;*/
+        background-color: var(--alt-text);
+    
+        position: fixed;
+        top: 0;
+        left: 0;
+        transition: 0.6s;
+        /*padding: 12dvh 0;*/
+    }
+    
+    .logo-div {
+        position: relative; /*You can later take it out*/
+        width: 20%;
+        display: flex;
+        align-items: center;
+        padding: 3em 0 3em 1em;
+        gap: 1em;
+        /*position: fixed;*/
+    }
+    
+    .logo{
+        width: 40px;
+        border-radius: 100%;
+        border: 1px solid var(--body-colour);
+    }
+    
+    .name {
+        display: block;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    
+    .page-title-div h1{
+        font-size: 2rem;
+        font-weight: bolder;
+        /*padding-top: 1em;*/
+        padding-left: 2em;
+    }
+    
+    /* ----------------- Side Navigation-----------------------*/
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4em;
+        padding: 2em;
+    }
+    
+    .nav-list {
+        width: 6rem;
+        background-color: var(--alt-text);
+        padding: 0.6em;
+        border-radius: 15px;
+        text-align: center;
+    }
+    
+    .nav-items {
+        color: var(--body-colour);
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    
+    .side-nav {
+        margin-top: 4em;
+        /*position: fixed;*/
+    }
+    
+    /* ----------------- Main body-----------------------*/
+    
+    .main-display-grid {
+        display: grid;
+        /*grid-template-columns: 20% 60% 16%;*/
+        grid-template-columns: 78% 18%;
+        gap: 4%;
+        margin-top: 12dvh; /*This was important*/
+    
+        /*position: relative;*/
+        min-height: 200vh;
+    }
+    
+    /* ----------------- Main Content-----------------------*/
+    .main-contents {
+        background-color: var(--body-colour);
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        height: 88dvh;
+        border-top-right-radius: 6em;
+        color: var(--alt-text);
+        width: 20%;
+        /*display: grid;
+        gap: 1%;
+        grid-template-columns: 27.5% 71%;*/
+    
+        position: fixed;
+        /*top: 120;
+        left: 0;
+        transition: 0.6s;*/
+        
+    }
+    
+    
+    /* ----------------- Home Design-----------------------*/
+    .homedesign-div {
+        margin-top: 2em;
+        margin-bottom: 1em;
+        clear: both;
+        height: 70%;
+    }
+    
+    .levels {
+        padding: 0.6em;
+    }
+    
+    .design-text {
+        font-size: 1rem;
+        font-weight: bold;
+        font-family: sans-serif;
+        padding-left: 1.1ch;
+        z-index: 1000;
+    }
+    
+    .shs, .jhs, .primary, .pre-school {
+        opacity: 50%;
+    }
+    
+    .underline {
+        width: 7ch;
+        height: 0.3ch;
+        background-color: var(--links);
+        margin-left: 2ch;
+    }
+    
+    .pockets {
+        height: 14ch;
+        width: 13ch;
+        border: 1px solid var(--links);
+        border-top-right-radius: 50px;
+        border-left: none;
+        opacity: 40%;
+    }
+    
+    .pocket1 {
+        position: absolute;
+        z-index: 1;
+        border-bottom: none;
+    }
+    
+    .pocket2 {
+        position: absolute;
+        z-index: 2;
+        border-bottom: none;
+    }
+    
+    .pocket3 {
+        position: absolute;
+        z-index: 3;
+        border-bottom: none;
+    }
+    
+    .pocket4 {
+        position: absolute;
+        z-index: 4;
+        border-bottom: none;
+    }
+    
+    .pocket5 {
+        position: absolute;
+        z-index: 5;
+    }
+    
+    .levels a {
+        text-decoration: none;
+        color: var(--links);
+    }
+    
+    
+    
+    /*--------------------LLM Narative----------------------*/
+    .reading-grid {
+        padding: 1em 0.4em 1em 0.4em;
+        border-right: 1px solid var(--links);
+        width: 100%;
+        /*margin-left: 20vw;*/
+    
+        margin-left: 25.5%;
+        transition: 0.6s;
+    }
+    
+    .reading-grid p {
+        font-size: 1.4rem;
+        line-height: 1.6;
+        margin-bottom: 1.1ch;
+    }
+    
+    /*--------------------LLM Topics----------------------*/
+    
+    .topics {
+        padding: 0.1em;
+        /*position: fixed;*/
+        /*right: 0;*/
+        visibility: hidden;
+    }
+    
+    .topics-heading {
+        color: var(--headings-color);
+        margin-bottom: 2ch;
+    }
+    
+    .topics li {
+        line-height: 2.7;
+        /*list-style: none;*/
+        font-size: 0.7rem;
+    }
+
+        /*--------------------LLM Narative----------------------*/
+
+.classes {
+    margin-bottom: 10ch;
+}
+
+.classes h2 {
+    background-color: darkorange;
+    color: var(--headings-color);
+    padding: 1em;
+    font-size: 2rem;
+}
+
+.topic-summary {
+    width: 98%;
+    /*padding: 1em;*/
+    /*display: flex;*/
+}
+
+.lesson {
+    border-bottom: 2px solid var(--body-colour);
+    margin-bottom: 4em;
+    padding-bottom: 4em;
+}
+
+.sub-topic {
+    margin-top: 2em;
+}
+
+.level-name h2 {
+    font-size: 1.4em;
+}
+
+
+/*-----Pictures-----*/
+.width200 {
+    width: 150px;
+    float: inline-end;
+}
+
+.half-width {
+    width: 250px;
+    /*float: inline-end;*/
+    display: block;
+    margin: 1em auto;
+}
+
+.place {
+    width: 150px;
+    float: inline-end;
+}
+
+
 }

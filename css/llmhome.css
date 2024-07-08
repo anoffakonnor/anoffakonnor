@@ -203,3 +203,981 @@ body {
 .llm-narative p {
     font-size: 2.1rem;
 }
+
+
+@media(max-width:1024px){
+    body {
+        margin: 0;
+        height: 100vh;
+        overflow: hidden;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        background: var(--alt-text);
+        color: var(--text-color)
+    
+    }
+    
+    .container {
+        /*display: flex;*/
+        width: 100%;
+    }
+    
+    
+    
+    /* ----------------- Top Bar-------------------------------*/
+    .top-bar {
+        width: 100%;
+        height: 12dvh;
+        display: flex;
+        gap: 2%;
+        /*position:fixed;*/
+    }
+    
+    .logo-div {
+        width: 20%;
+        display: flex;
+        align-items: center;
+        padding: 3em 0 3em 3em;
+        gap: 1.2em;
+        /*position: fixed;*/
+    }
+    
+    .logo{
+        width: 50px;
+        border-radius: 100%;
+        border: 1px solid var(--body-colour);
+    }
+    
+    .name {
+        display: block;
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+    
+    .page-title-div h1{
+        font-size: 3.5rem;
+        font-weight: bolder;
+        padding-top: 0.8em;
+        padding-left: 0.5em;
+    }
+    
+    
+    
+    /* ----------------- Main body-----------------------*/
+    
+    .main-display-grid {
+        display: grid;
+        gap: 1%;
+        grid-template-columns: 83% 15%;
+    }
+    
+    
+    /* ----------------- Side Navigation-----------------------*/
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+        padding: 1em;
+    }
+    
+    .nav-list {
+        width: 15rem;
+        background-color: var(--body-colour);
+        padding: 1em;
+        border-radius: 15px;
+        text-align: center;
+    }
+    
+    .nav-items {
+        color: var(--links);
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    
+    .side-nav {
+        display: block;
+        height: 88dvh;
+        /*position: fixed;*/
+    }
+    
+    /* ----------------- Main Content-----------------------*/
+    .main-contents {
+        background-color: var(--body-colour);
+        height: 88dvh;
+        border-top-right-radius: 6em;
+        color: var(--alt-text);
+        display: grid;
+        gap: 3%;
+        grid-template-columns: 26% 71%;
+    }
+    
+    
+    /* ----------------- Home Design-----------------------*/
+    .homedesign-div {
+        margin-top: 7em;
+    }
+    
+    .levels {
+        padding: 0.8em;
+    }
+    
+    .design-text {
+        font-size: 2.3rem;
+        font-weight: bold;
+        font-family: sans-serif;
+        padding-left: 2ch;
+        z-index: 1000;
+    }
+    
+    .shs, .jhs, .primary, .pre-school {
+        opacity: 50%;
+    }
+    
+    .underline {
+        width: 15ch;
+        height: 0.3ch;
+        background-color: var(--links);
+        margin-left: 3ch;
+    }
+    
+    .pockets {
+        height: 30ch;
+        width: 35ch;
+        border: 1px solid var(--links);
+        border-top-right-radius: 50px;
+        border-left: none;
+        opacity: 40%;
+    }
+    
+    .pocket1 {
+        position: absolute;
+        z-index: 1;
+        border-bottom: none;
+    }
+    
+    .pocket2 {
+        position: absolute;
+        z-index: 2;
+        border-bottom: none;
+    }
+    
+    .pocket3 {
+        position: absolute;
+        z-index: 3;
+        border-bottom: none;
+    }
+    
+    .pocket4 {
+        position: absolute;
+        z-index: 4;
+        border-bottom: none;
+    }
+    
+    .pocket5 {
+        position: absolute;
+        z-index: 5;
+    }
+    
+    .levels a {
+        text-decoration: none;
+        color: var(--links);
+    }
+    
+    
+    
+    /*--------------------LLM Narative----------------------*/
+    .llm-narative {
+        padding: 2em;
+    }
+    
+    .llm-narative p {
+        font-size: 2rem;
+    }
+    
+    
+    
+}
+
+
+
+@media(max-width:769px){
+    body {
+        margin: 0;
+        height: 100vh;
+        overflow: hidden;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        background: var(--alt-text);
+        color: var(--text-color)
+    
+    }
+    
+    .container {
+        /*display: flex;*/
+        width: 100%;
+    }
+    
+    
+    
+    /* ----------------- Top Bar-------------------------------*/
+    .top-bar {
+        width: 100%;
+        height: 12dvh;
+        display: flex;
+        gap: 2%;
+        /*position:fixed;*/
+    }
+    
+    .logo-div {
+        width: 20%;
+        display: flex;
+        align-items: center;
+        padding: 3em 0 3em 3em;
+        gap: 1.1em;
+        /*position: fixed;*/
+    }
+    
+    .logo{
+        width: 50px;
+        border-radius: 100%;
+        border: 1px solid var(--body-colour);
+    }
+    
+    .name {
+        display: block;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    
+    .page-title-div h1{
+        font-size: 3.5rem;
+        font-weight: bolder;
+        padding-top: 0.8em;
+        padding-left: 0.5em;
+    }
+    
+    
+    
+    /* ----------------- Main body-----------------------*/
+    
+    .main-display-grid {
+        display: grid;
+        gap: 2%;
+        grid-template-columns: 83% 15%;
+    }
+    
+    
+    /* ----------------- Side Navigation-----------------------*/
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        padding: 1em;
+    }
+    
+    .nav-list {
+        width: 10rem;
+        background-color: var(--body-colour);
+        padding: 1em;
+        border-radius: 15px;
+        text-align: center;
+    }
+    
+    .nav-items {
+        color: var(--links);
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+    
+    .side-nav {
+        display: block;
+        height: 88dvh;
+        /*position: fixed;*/
+    }
+    
+    /* ----------------- Main Content-----------------------*/
+    .main-contents {
+        background-color: var(--body-colour);
+        height: 88dvh;
+        border-top-right-radius: 6em;
+        color: var(--alt-text);
+        display: grid;
+        gap: 3%;
+        grid-template-columns: 26% 71%;
+    }
+    
+    
+    /* ----------------- Home Design-----------------------*/
+    .homedesign-div {
+        margin-top: 6em;
+    }
+    
+    .levels {
+        padding: 0.7em;
+    }
+    
+    .design-text {
+        font-size: 1.8rem;
+        font-weight: bold;
+        font-family: sans-serif;
+        padding-left: 1ch;
+        z-index: 1000;
+    }
+    
+    .shs, .jhs, .primary, .pre-school {
+        opacity: 50%;
+    }
+    
+    .underline {
+        width: 12ch;
+        height: 0.3ch;
+        background-color: var(--links);
+        margin-left: 2ch;
+    }
+    
+    .pockets {
+        height: 30ch;
+        width: 28ch;
+        border: 1px solid var(--links);
+        border-top-right-radius: 50px;
+        border-left: none;
+        opacity: 40%;
+    }
+    
+    .pocket1 {
+        position: absolute;
+        z-index: 1;
+        border-bottom: none;
+    }
+    
+    .pocket2 {
+        position: absolute;
+        z-index: 2;
+        border-bottom: none;
+    }
+    
+    .pocket3 {
+        position: absolute;
+        z-index: 3;
+        border-bottom: none;
+    }
+    
+    .pocket4 {
+        position: absolute;
+        z-index: 4;
+        border-bottom: none;
+    }
+    
+    .pocket5 {
+        position: absolute;
+        z-index: 5;
+    }
+    
+    .levels a {
+        text-decoration: none;
+        color: var(--links);
+    }
+    
+    
+    
+    /*--------------------LLM Narative----------------------*/
+    .llm-narative {
+        padding: 1.5em;
+    }
+    
+    .llm-narative p {
+        font-size: 1.8rem;
+    }
+    
+    
+    
+}
+
+
+
+@media(max-width:426px){
+    body {
+        margin: 0;
+        height: 100vh;
+        overflow: hidden;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        background: var(--alt-text);
+        color: var(--text-color)
+    
+    }
+    
+    .container {
+        /*display: flex;*/
+        width: 100%;
+    }
+    
+    
+    
+    /* ----------------- Top Bar-------------------------------*/
+    .top-bar {
+        width: 100%;
+        height: 12dvh;
+        display: flex;
+        gap: 2%;
+        /*position:fixed;*/
+    }
+    
+    .logo-div {
+        width: 20%;
+        display: flex;
+        align-items: center;
+        padding: 3em 0 3em 1em;
+        gap: 0.5em;
+        /*position: fixed;*/
+    }
+    
+    .logo{
+        width: 40px;
+        border-radius: 100%;
+        border: 1px solid var(--body-colour);
+    }
+    
+    .name {
+        display: block;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    
+    .page-title-div h1{
+        font-size: 2.5rem;
+        font-weight: bolder;
+        padding-top: 1em;
+        padding-left: 2em;
+    }
+    
+    
+    
+    /* ----------------- Main body-----------------------*/
+    
+    .main-display-grid {
+        display: grid;
+        gap: 1%;
+        grid-template-columns: 84% 15%;
+    }
+    
+    
+    /* ----------------- Side Navigation-----------------------*/
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        padding: 1em;
+    }
+    
+    .nav-list {
+        width: 7.5rem;
+        background-color: var(--body-colour);
+        padding: 0.5em;
+        border-radius: 15px;
+        text-align: center;
+    }
+    
+    .nav-items {
+        color: var(--links);
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+    
+    .side-nav {
+        display: block;
+        height: 88dvh;
+        /*position: fixed;*/
+    }
+    
+    /* ----------------- Main Content-----------------------*/
+    .main-contents {
+        background-color: var(--body-colour);
+        height: 88dvh;
+        border-top-right-radius: 6em;
+        color: var(--alt-text);
+        display: grid;
+        gap: 1%;
+        grid-template-columns: 20% 79%;
+    }
+    
+    
+    /* ----------------- Home Design-----------------------*/
+    .homedesign-div {
+        margin-top: 10em;
+    }
+    
+    .levels {
+        padding: 0.7em;
+    }
+    
+    .design-text {
+        font-size: 1rem;
+        font-weight: bold;
+        font-family: sans-serif;
+        padding-left: 1ch;
+        z-index: 1000;
+    }
+    
+    .shs, .jhs, .primary, .pre-school {
+        opacity: 50%;
+    }
+    
+    .underline {
+        width: 7ch;
+        height: 0.3ch;
+        background-color: var(--links);
+        margin-left: 1ch;
+    }
+    
+    .pockets {
+        height: 20ch;
+        width: 14ch;
+        border: 1px solid var(--links);
+        border-top-right-radius: 50px;
+        border-left: none;
+        opacity: 40%;
+    }
+    
+    .pocket1 {
+        position: absolute;
+        z-index: 1;
+        border-bottom: none;
+    }
+    
+    .pocket2 {
+        position: absolute;
+        z-index: 2;
+        border-bottom: none;
+    }
+    
+    .pocket3 {
+        position: absolute;
+        z-index: 3;
+        border-bottom: none;
+    }
+    
+    .pocket4 {
+        position: absolute;
+        z-index: 4;
+        border-bottom: none;
+    }
+    
+    .pocket5 {
+        position: absolute;
+        z-index: 5;
+    }
+    
+    .levels a {
+        text-decoration: none;
+        color: var(--links);
+    }
+    
+    
+    
+    /*--------------------LLM Narative----------------------*/
+    .llm-narative {
+        padding: 3em 1.3em 0 1em;
+        margin-left: 1em;
+
+    }
+    
+    .llm-narative p {
+        font-size: 1.4rem;
+    }
+    
+    
+    
+}
+
+
+
+@media(max-width:376px){
+    body {
+        margin: 0;
+        height: 100vh;
+        overflow: hidden;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        background: var(--alt-text);
+        color: var(--text-color)
+    
+    }
+    
+    .container {
+        /*display: flex;*/
+        width: 100%;
+    }
+    
+    
+    
+    /* ----------------- Top Bar-------------------------------*/
+    .top-bar {
+        width: 100%;
+        height: 12dvh;
+        display: flex;
+        gap: 2%;
+        /*position:fixed;*/
+    }
+    
+    .logo-div {
+        width: 20%;
+        display: flex;
+        align-items: center;
+        padding: 3em 0 3em 1em;
+        gap: 0.5em;
+        /*position: fixed;*/
+    }
+    
+    .logo{
+        width: 40px;
+        border-radius: 100%;
+        border: 1px solid var(--body-colour);
+    }
+    
+    .name {
+        display: block;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    
+    .page-title-div h1{
+        font-size: 2.5rem;
+        font-weight: bolder;
+        padding-top: 1em;
+        padding-left: 2em;
+    }
+    
+    
+    
+    /* ----------------- Main body-----------------------*/
+    
+    .main-display-grid {
+        display: grid;
+        gap: 1%;
+        grid-template-columns: 84% 15%;
+    }
+    
+    
+    /* ----------------- Side Navigation-----------------------*/
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        padding: 1em;
+    }
+    
+    .nav-list {
+        width: 7.5rem;
+        background-color: var(--body-colour);
+        padding: 0.5em;
+        border-radius: 15px;
+        text-align: center;
+    }
+    
+    .nav-items {
+        color: var(--links);
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+    
+    .side-nav {
+        display: block;
+        height: 88dvh;
+        /*position: fixed;*/
+    }
+    
+    /* ----------------- Main Content-----------------------*/
+    .main-contents {
+        background-color: var(--body-colour);
+        height: 88dvh;
+        border-top-right-radius: 6em;
+        color: var(--alt-text);
+        display: grid;
+        gap: 1%;
+        grid-template-columns: 20% 79%;
+    }
+    
+    
+    /* ----------------- Home Design-----------------------*/
+    .homedesign-div {
+        margin-top: 10em;
+    }
+    
+    .levels {
+        padding: 0.7em;
+    }
+    
+    .design-text {
+        font-size: 1rem;
+        font-weight: bold;
+        font-family: sans-serif;
+        padding-left: 1ch;
+        z-index: 1000;
+    }
+    
+    .shs, .jhs, .primary, .pre-school {
+        opacity: 50%;
+    }
+    
+    .underline {
+        width: 7ch;
+        height: 0.3ch;
+        background-color: var(--links);
+        margin-left: 1ch;
+    }
+    
+    .pockets {
+        height: 20ch;
+        width: 14ch;
+        border: 1px solid var(--links);
+        border-top-right-radius: 50px;
+        border-left: none;
+        opacity: 40%;
+    }
+    
+    .pocket1 {
+        position: absolute;
+        z-index: 1;
+        border-bottom: none;
+    }
+    
+    .pocket2 {
+        position: absolute;
+        z-index: 2;
+        border-bottom: none;
+    }
+    
+    .pocket3 {
+        position: absolute;
+        z-index: 3;
+        border-bottom: none;
+    }
+    
+    .pocket4 {
+        position: absolute;
+        z-index: 4;
+        border-bottom: none;
+    }
+    
+    .pocket5 {
+        position: absolute;
+        z-index: 5;
+    }
+    
+    .levels a {
+        text-decoration: none;
+        color: var(--links);
+    }
+    
+    
+    
+    /*--------------------LLM Narative----------------------*/
+    .llm-narative {
+        padding: 3em 1em 0 1.4em;
+        margin-left: 1em;
+
+    }
+    
+    .llm-narative p {
+        font-size: 1.3rem;
+        margin-bottom: 1ch;
+    }
+    
+    
+    
+}
+
+
+
+@media(max-width:320px){
+    body {
+        margin: 0;
+        height: 100vh;
+        overflow: hidden;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        background: var(--alt-text);
+        color: var(--text-color)
+    
+    }
+    
+    .container {
+        /*display: flex;*/
+        width: 100%;
+    }
+    
+    
+    
+    /* ----------------- Top Bar-------------------------------*/
+    .top-bar {
+        width: 100%;
+        height: 12dvh;
+        display: flex;
+        gap: 4%;
+        /*position:fixed;*/
+    }
+    
+    .logo-div {
+        width: 20%;
+        display: flex;
+        align-items: center;
+        padding: 3em 0 3em 0.8em;
+        gap: 0.5em;
+        /*position: fixed;*/
+    }
+    
+    .logo{
+        width: 40px;
+        border-radius: 100%;
+        border: 1px solid var(--body-colour);
+    }
+    
+    .name {
+        display: block;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    
+    .page-title-div h1{
+        font-size: 2.5rem;
+        font-weight: bolder;
+        padding-top: 0.4em;
+        padding-left: 3em;
+    }
+    
+    
+    
+    /* ----------------- Main body-----------------------*/
+    
+    .main-display-grid {
+        display: grid;
+        gap: 1%;
+        grid-template-columns: 84% 15%;
+    }
+    
+    
+    /* ----------------- Side Navigation-----------------------*/
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        padding: 1em;
+    }
+    
+    .nav-list {
+        width: 7.5rem;
+        background-color: var(--body-colour);
+        padding: 0.5em;
+        border-radius: 15px;
+        text-align: center;
+    }
+    
+    .nav-items {
+        color: var(--links);
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+    
+    .side-nav {
+        display: block;
+        height: 88dvh;
+        /*position: fixed;*/
+    }
+    
+    /* ----------------- Main Content-----------------------*/
+    .main-contents {
+        background-color: var(--body-colour);
+        height: 88dvh;
+        border-top-right-radius: 6em;
+        color: var(--alt-text);
+        display: grid;
+        gap: 1%;
+        grid-template-columns: 20% 79%;
+    }
+    
+    
+    /* ----------------- Home Design-----------------------*/
+    .homedesign-div {
+        margin-top: 10em;
+    }
+    
+    .levels {
+        padding: 0.7em;
+    }
+    
+    .design-text {
+        font-size: 1rem;
+        font-weight: bold;
+        font-family: sans-serif;
+        padding-left: 1ch;
+        z-index: 1000;
+    }
+    
+    .shs, .jhs, .primary, .pre-school {
+        opacity: 50%;
+    }
+    
+    .underline {
+        width: 7ch;
+        height: 0.3ch;
+        background-color: var(--links);
+        margin-left: 1ch;
+    }
+    
+    .pockets {
+        height: 20ch;
+        width: 14ch;
+        border: 1px solid var(--links);
+        border-top-right-radius: 50px;
+        border-left: none;
+        opacity: 40%;
+    }
+    
+    .pocket1 {
+        position: absolute;
+        z-index: 1;
+        border-bottom: none;
+    }
+    
+    .pocket2 {
+        position: absolute;
+        z-index: 2;
+        border-bottom: none;
+    }
+    
+    .pocket3 {
+        position: absolute;
+        z-index: 3;
+        border-bottom: none;
+    }
+    
+    .pocket4 {
+        position: absolute;
+        z-index: 4;
+        border-bottom: none;
+    }
+    
+    .pocket5 {
+        position: absolute;
+        z-index: 5;
+    }
+    
+    .levels a {
+        text-decoration: none;
+        color: var(--links);
+    }
+    
+    
+    
+    /*--------------------LLM Narative----------------------*/
+    .llm-narative {
+        padding: 3em 1.3em 0 1em;
+        margin-left: 1em;
+
+    }
+    
+    .llm-narative p {
+        font-size: 1.4rem;
+    }
+    
+    footer {
+        font-size: 1.5em;
+    }
+    
+}
