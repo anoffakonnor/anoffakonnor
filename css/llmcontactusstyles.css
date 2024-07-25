@@ -81,6 +81,16 @@ transition: 0.6s;
     padding-left: 0.5em;
 }
 
+@media only screen and (max-width: 480px){
+    .page-title-div h1{
+        font-size: 1rem;
+        font-weight: bold;
+        padding-top: 0.5em;
+        padding-left: 0.5em;
+        margin-left: 2px;
+    }
+}
+
 
 
 /* ----------------- Main body-----------------------*/
@@ -154,25 +164,93 @@ transition: 0.6s;
 
 }
 
+/*------------form---------------------------*/
+
+.form-div {
+    max-width: 500px;
+    margin: 40px auto;
+    background-color: #3E2F5D;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-div h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 2.4em;
+    color: orange;
+    font-weight: bold;
+}
+
+.form-div form {
+    margin: 14px auto;
+    
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+}
+
+.form-div form label {
+    color: var(--links);
+    font-size: 1.6em;
+}
+
+.form-div form input {
+    height: 35px;
+}
+
+.form-div form textarea {
+    height: 150px;
+}
+
+.form-div button[type="submit"] {
+    max-width: 80%;
+    margin: auto;
+    background-color: #d88416;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.form-div button[type="submit"]:hover {
+    background-color: #06cc31;
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width: 480px) {
+    .form-div h2 {
+        font-size: 1.6em;
+    }
+    .form-div form textarea {
+        height: 80px;
+    }
+    .form-div form label {
+        font-size: 1.4em;
+    }
+    .form-div button[type="submit"]{
+        font-size: 18px;
+    }
+    .form-div form input {
+        height: 30px;
+    }
+}
+
+/*--------------------------------------------*/
+
+
+
+
 
 /*------Media Query----------*/
 
 @media(max-width:1024px){
-
-    body {
-        margin: 0;
-        height: 100vh;
-        /*overflow: hidden;*/
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        background: var(--alt-text);
-        color: var(--text-color)
-
-    }
-
-    .container {
-        /*display: flex;*/
-        width: 100%;
-    }
 
     /* ----------------- Top Bar-------------------------------*/
     .top-bar {
@@ -210,13 +288,6 @@ transition: 0.6s;
         display: block;
         font-size: 1.5rem;
         font-weight: bold;
-    }
-
-    .page-title-div h1{
-        font-size: 3.5rem;
-        font-weight: bolder;
-        padding-top: 0.7em;
-        padding-left: 0.5em;
     }
 
 
@@ -291,7 +362,7 @@ transition: 0.6s;
 
 
 
-@media(max-width:769px){
+@media only screen and (max-width:768px){
 
     body {
         margin: 0;
@@ -426,7 +497,7 @@ transition: 0.6s;
 
 
 
-@media(max-width:426px){
+@media only screen and (max-width:480px){
 
     body {
         margin: 0;
@@ -481,12 +552,7 @@ transition: 0.6s;
         font-weight: bold;
     }
 
-    .page-title-div h1{
-        font-size: 3rem;
-        font-weight: bolder;
-        padding-top: 0.5em;
-        padding-left: 0.5em;
-    }
+    
 
 
     /* ----------------- Main body-----------------------*/

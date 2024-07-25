@@ -118,7 +118,7 @@ body {
     color: var(--alt-text);
     display: grid;
     gap: 1%;
-    grid-template-columns: 27.5% 71%;
+    grid-template-columns: 27.5% 70%;
 }
 
 
@@ -197,11 +197,17 @@ body {
 
 /*--------------------LLM Narative----------------------*/
 .llm-narative {
-    padding: 1em;
+    padding: 4em 3em;
 }
 
 .llm-narative p {
     font-size: 2.1rem;
+    line-height: 1.3;
+    margin-bottom: 1ch;
+}
+
+.llm-name {
+    color: orange;
 }
 
 
@@ -399,7 +405,7 @@ body {
 
 
 
-@media(max-width:769px){
+@media(max-width:768px){
     body {
         margin: 0;
         height: 100vh;
@@ -593,7 +599,7 @@ body {
 
 
 
-@media(max-width:426px){
+@media(max-width:480px){
     body {
         margin: 0;
         height: 100vh;

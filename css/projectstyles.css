@@ -142,8 +142,43 @@ transition: 0.6s;
 
 .project-link {
     font-size: 1.8rem;
-
+    border: 1px solid var(--headings-color);
+    padding: 24px;
+    border-radius: 24px;
+    margin-bottom: 32px;
 }
+
+.project {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    padding: 18px;
+}
+
+.project-logo{
+    max-width: 25%;
+    max-height: 200px;
+    border-radius: 20%;
+    border: 1px solid var(--body-colour);
+}
+
+.project-description {
+    max-width: 70%;
+    padding: 16px;
+    border-left: 1px solid var(--links);
+}
+
+.project-link .project-title a {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.project-description a {
+    color: rgba(255, 0, 0);
+    font-weight: bold;
+}
+
+
 
 /*------Media Query----------*/
 
