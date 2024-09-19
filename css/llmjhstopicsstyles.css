@@ -324,6 +324,13 @@ hr {
     margin: 1em auto;
 }
 
+.full-width {
+    max-width: 100%;
+    /*float: inline-end;*/
+    display: block;
+    margin: 1em auto;
+}
+
 .place {
     width: 200px;
     float: inline-end;

@@ -27,6 +27,11 @@ body {
 
 }
 
+a {
+    text-decoration: none;
+    color: tomato;
+}
+
 .container {
     display: flex;
     width: 80%;
